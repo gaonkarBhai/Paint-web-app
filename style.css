@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    background-color: #326aa1;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    /* margin: 1rem; */
+}
+.size{
+    border-radius: 5px;
+    background-color: #fff;
+    height: 500px;
+    padding: 1rem;
+}
+.sec{
+    margin: 10px;
+}
+.sec ul{
+    margin: 5px;
+    position: relative;
+}
+/* .sec ul li */
+.sec ul li i{
+    margin-right: 10px;
+}
+.sec ul li{
+    margin: 5px;
+}
+.sec ul li:hover{
+    color: blue;
+}
+#slider{
+    width: 100%;
+    height: 5px;
+}
+
+.sec3 .colors{
+    display: flex;
+    justify-content: space-between;
+}
+.sec3 .colors li input{
+    position: relative;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+.sec4{
+    display: flex;
+    flex-direction: column;
+}
+.sec4 button{
+    font-size: 20px;
+    padding: 5px 15px;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+.sec4 #btn1{
+    background-color: #9b9a9ac0;
+    border: 1px solid gray;
+    color: rgb(112, 111, 111);
+}
+.sec4 #btn2{
+    background-color: #2e4faab8;
+    border: 1px solid blue;
+    color: #edecec;
+}
+.sec4{
+    margin-top: 20px;
+}
+.right{
+    width: 60%;
+}
+canvas{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    /* background: rgb(230, 225, 225); */
+}
+/* --------------- */
+.active{
+    color: blue;
+}
+.inactive{
+    color: black;
+}
+.color{
+    padding: 5px;
+    border-radius: 50%;
+}
+.selected{
+    /* padding: 5px;
+    border-radius: 50%; */
+    border: 2px solid rgb(255, 0, 217);
+}
+@media (max-width:750px) {
+    .container{
+        flex-wrap: wrap;
+    }
+    .size{
+        width: 100%;
+    }
+}

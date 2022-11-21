@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="naveenBhai">
+    <meta name="keywords" content="paintApp ,html,javascript ,css">
+    <meta name="description" content="paint app">
+    <title>paint</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <section class="left size">
+            <div class="sec1 sec">
+                <h3>Shapes</h3>
+                <ul class="shape">
+                    <li class="tool" id="rect"><i class="fa-regular fa-square"></i>Rectangle</li>
+                    <li class="tool" id="circle"><i class="fa-regular fa-circle"></i>Circle</li>
+                    <li class="tool" id="triangle"><img src="https://img.icons8.com/material-outlined/24/null/triangle-stroked.png" />Triangle</li>
+                    <li class="tool" id="fill-color"><input type="checkbox" name="fill" id="fill"> <label for="fill">Fill color</label></li>
+
+                </ul>
+            </div>
+            <div class="sec2 sec">
+                <h3>Option</h3>
+                <ul class="option">
+                    <li class="tool active" id="brush"><i class="fa-solid fa-paintbrush"></i>Brush</li>
+                    <li class="tool" id="erase"><i class="fa-solid fa-eraser"></i>Eraser</li>
+                    <input type="range" id="slider">
+                </ul>
+            </div>
+            <div class="sec3 sec">
+                <h3>Colors</h3>
+                <ul class="colors">
+                    <li class="color" style="background-color: white;"><input type="color" name="white"></li>
+                    <li class="color" style="background-color: red;"><input type="color" name="red"></li>
+                    <li class="color" style="background-color: blue;"><input type="color" name="blue"></li>
+                    <li class="color" style="background-color: green;"><input type="color" name="green" ></li>
+                    <li class="color selected" style="background-color: black;"><input type="color" name="black" id="color-picker"></li>
+                </ul>
+            </div>
+            <div class="sec4 sec">
+                <button id="btn1">Clear Canvas</button>
+                <button id="btn2">Save As Image</button>
+            </div>
+        </section>
+        <section class="right size">
+            <canvas></canvas>
+        </section>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
